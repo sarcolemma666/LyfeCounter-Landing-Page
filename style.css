@@ -1,0 +1,255 @@
+body {
+    background-color: #000000;
+    background-image: url(images/scroll.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 0%;
+    width: 100%;
+    margin: auto;
+}
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  	font-family: magmed;
+	src: url(magmed.ttf);
+}
+p {
+    font-family: magmed;
+}
+.content {
+    margin: auto;
+    max-width: 75%;
+}
+    			figure {
+				  position: relative;
+				  padding: 20px;
+				  width: 100%;
+				  max-width: 600px;
+				  margin: auto;
+				  margin-top: -36px;
+				}
+
+				figure::after {
+				  content: ' ';
+				  position: absolute;
+				  top: 0;
+				  left: 0;
+				  right: 0;
+				  bottom: 0;
+				  z-index: -1;
+				  background-image: url(images/mtg_lyfecounter_swirly.png);
+				  background-size: 102% 102%;
+				  filter: blur(24px) saturate(10);
+				}
+
+				.logo {
+				  display: block;
+				  width: 100%;
+				}
+.headline {
+	font-size: 35px;
+	margin-top: -115px;
+}
+				:root {
+				  --gold: #ffb338;
+				  --light-shadow: #77571d;
+				  --dark-shadow: #3e2904;
+				}
+				.wrapper {
+				  display: grid;
+				  grid-template-areas: 'overlap';
+				  place-content: center;
+				}
+				.wrapper > div {
+				  background-clip: text;  
+				  -webkit-background-clip: text;
+				  color: #363833;
+				  font-weight: 900;
+				  grid-area: overlap;
+				  letter-spacing: 1px;
+				  -webkit-text-stroke: 4px transparent;
+				}
+				div.bg {
+				  background-image: repeating-linear-gradient( 105deg, 
+				    var(--gold) 0% , 
+				    var(--dark-shadow) 5%,
+				    var(--gold) 12%);
+				  color: transparent;
+				  filter: drop-shadow(5px 5px 3px black);
+				  transform: scaleY(1.03);
+				  transform-origin: top;
+				}
+				div.fg {
+				  background-image: repeating-linear-gradient( 5deg,  
+				    var(--gold) 0% , 
+				    var(--light-shadow) 23%, 
+				    var(--gold) 31%);
+				  color: #1e2127;
+				  transform: scale(1);
+				}
+.information {
+    margin: auto;
+    max-width: 566px;
+}
+.about {
+    font-size: 25px;
+    max-width: 500px;
+    margin: auto;
+    margin-top: -55px;
+        margin-left: 53px;
+    font-weight: bold;
+}
+.features-header {
+	font-size: 30px;
+}
+.features {
+    font-size: 22px;
+    margin-top: -43px;
+    width: 78%;
+    margin-left: 70px;
+    margin-bottom: 59px;
+}
+.container {
+  display: flex;
+  flex-basis: auto;
+  justify-content: center;
+  margin-top: -40px;
+}
+.buttons {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 25px;
+}
+button {
+    background-image: url(images/button.png);
+    background-size: cover;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    font-size: 2rem;
+    border: none;
+    padding: 22px 64px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bolder;
+    width: 215px;
+}
+.contact-us {
+
+}
+.google-play {    
+	width: 227px;
+    margin: -17px 0 -30px 0;
+}
+.apple {
+	align-self: center;
+    width: 198px;
+    margin: 16px 0 0 0;
+}
+
+
+@media only screen and (max-width: 480px){
+	.headline {
+	    font-size: 18px;
+	    margin-top: -48px;
+	}
+	.about {
+	    font-size: 15px;
+	    margin-top: -25px;
+	    margin-left: 12px;
+	}
+	.features-header {
+	    font-size: 18px;
+	    margin-top: -29px;
+	}
+	.container {
+	    display: flex;
+	    flex-flow: column wrap;
+	    align-items: flex-start;
+	    align-content: flex-start;
+	    flex-flow: column wrap;
+		height: 250px;
+		width: 45%;
+	}
+	.wrapper {
+	    margin: 14px 0 -24px 0;
+	}
+	.features p {
+	    text-align: left;
+	}
+	.features {
+	    font-size: 13px;
+	    margin: 0 0 0 17px;
+	}
+	button {
+		width: 121px;
+		padding: 0;
+	}
+	.google-play {
+    	width: 146px;
+    	margin: 0 0 -12px 0;
+	}
+	.apple {
+    	width: 127px;
+    	margin: 11px 0 0 0;
+	}
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+	body {
+		height: 1116px;
+	}
+	.content {
+		max-width: 79%;
+	}
+	.headline {
+	    font-size: 28px;
+	    margin-top: -70px;
+   		margin-bottom: 38px;
+	}
+	.about {
+	    font-size: 20px;
+	    margin-left: 0;
+	}
+	.container {
+	    margin-top: 0;
+	}
+	.features-header {
+	    font-size: 28px;
+	    margin-top: -42px;
+	}
+	.features {
+    	font-size: 18px;
+    	margin: -30px 0 63px 20px;
+	}
+	.buttons {
+		space-between;
+   		margin: 23px 0 65px 0;
+	}
+	button {
+		padding: 0 0;
+		width: 126px;
+	}
+	.google-play {
+	    align-self: center;
+	    width: 170px;
+	    margin: 15px 0 0px 0;
+	}
+	.apple {
+	    align-self: center;
+	    width: 133px;
+	    margin: 12px 0 0 0;
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+
+}
+@media only screen (min-width: 1201px){
+
+}
